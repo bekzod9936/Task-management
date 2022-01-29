@@ -1,4 +1,7 @@
 .container {
   display: flex;
   flex-grow: 1;
+  background-color: #ddd;
+  overflow: hidden;
+  flex-direction: column;
 }

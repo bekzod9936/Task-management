@@ -1,0 +1,28 @@
+.container {
+  overflow: auto;
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  .wraplist {
+    padding: 10px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 4px;
+    min-width: 250px;
+  }
+  .input {
+    input {
+      padding: 8px 10px !important;
+    }
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  .button {
+    background-color: var(--blue);
+    margin-right: 5px;
+    color: white;
+    &:hover {
+      background-color: var(--blue);
+    }
+  }
+}
