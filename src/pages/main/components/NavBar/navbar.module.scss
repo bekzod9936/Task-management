@@ -1,0 +1,32 @@
+.container {
+  background-color: var(--yellow);
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .title {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .button {
+    background-color: #fff;
+    color: var(--yellow);
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+
+.popover {
+  padding: 10px 5px;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  .content {
+  }
+}

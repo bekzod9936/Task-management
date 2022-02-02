@@ -1,0 +1,13 @@
+.container {
+  width: 250px;
+  padding: 10px;
+  height: fit-content;
+  border-radius: 4px;
+  background-color: white;
+  header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,14 +1,13 @@
 .container {
   overflow: auto;
   display: flex;
-  width: 100%;
-  padding: 5px;
+  width: fit-content;
   .wraplist {
     padding: 10px;
     height: fit-content;
     background-color: white;
     border-radius: 4px;
-    min-width: 250px;
+    width: 250px;
   }
   .input {
     input {

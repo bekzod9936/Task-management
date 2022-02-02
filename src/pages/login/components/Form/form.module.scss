@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .button {
+    background-color: var(--yellow);
+    color: white;
+    height: 56px;
+    &:hover {
+      background-color: var(--yellow);
+    }
+  }
+  .wraplink {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    & > a {
+      color: var(--blue);
+    }
+  }
+}

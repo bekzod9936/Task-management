@@ -5,27 +5,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  a {
+    color: white;
+    font-weight: bold;
+  }
+  a:hover {
+    color: lightgrey;
+  }
   .title {
     color: #000;
     font-size: 20px;
     font-weight: bold;
+    color: white;
+    font-weight: bolder;
   }
 
-  .button {
-    background-color: #fff;
-    color: var(--yellow);
-    &:hover {
-      background-color: #fff;
-    }
-  }
-}
-
-.popover {
-  padding: 10px 5px;
-  min-width: 250px;
-  display: flex;
-  justify-content: center;
-  .content {
+  .wraplinks {
+    display: flex;
+    grid-gap: 20px;
   }
 }

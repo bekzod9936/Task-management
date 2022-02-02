@@ -1,4 +1,4 @@
-import styles from './AddList.module.scss';
+import styles from './addlist.module.scss';
 import { useCallback, useState, memo } from 'react';
 import { useStore } from 'services/store/addList';
 import { addSchema, IFormProps } from './add.schema';

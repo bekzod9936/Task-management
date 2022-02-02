@@ -1,8 +1,8 @@
-import Button from "@mui/material/Button";
-import styles from "./NavBar.module.scss";
-import Popover from "@mui/material/Popover";
-import { useState } from "react";
-import Divider from "@mui/material/Divider";
+import { useState } from 'react';
+import Button from '@mui/material/Button';
+import styles from './navbar.module.scss';
+import Popover from '@mui/material/Popover';
+import Divider from '@mui/material/Divider';
 
 const NavBar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -15,9 +15,10 @@ const NavBar = () => {
     setAnchorEl(null);
   };
 
-  const id = anchorEl ?? "simple-popover";
+  const id = anchorEl ?? 'simple-popover';
   return (
     <div className={styles.container}>
+      <div className={styles.title}>Task-Management</div>
       <Button
         aria-describedby={id}
         className={styles.button}
@@ -31,8 +32,8 @@ const NavBar = () => {
         anchorEl={anchorEl}
         onClose={handleClose}
         anchorOrigin={{
-          vertical: "bottom",
-          horizontal: "left",
+          vertical: 'bottom',
+          horizontal: 'left',
         }}
       >
         <div className={styles.popover}>
@@ -40,7 +41,6 @@ const NavBar = () => {
           <Divider light />
         </div>
       </Popover>
-      <div className={styles.title}>Task-Management</div>
     </div>
   );
 };

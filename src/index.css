@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
   box-sizing: border-box;
 }
 
@@ -8,4 +9,19 @@
   --yellow: #f6af21;
   --blue: #027ffe;
   --gray: #a7adba;
+}
+
+.MuiInputBase-multiline {
+  padding: 0 !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  box-shadow: 0 0 0 30px white inset !important;
+  background-color: white;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: black;
 }

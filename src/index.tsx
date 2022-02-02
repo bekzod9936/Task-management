@@ -1,10 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App/App';
+import 'index.css';
+import App from 'app';
+import { render } from 'react-dom';
+import { StrictMode } from 'react';
 import i18n from 'services/localization';
+import reportWebVitals from 'reportWebVitals';
 import { I18nextProvider } from 'react-i18next';
-import reportWebVitals from './reportWebVitals';
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
@@ -16,15 +16,15 @@ const theme = createTheme({
   },
 });
 
-ReactDOM.render(
-  <React.StrictMode>
+render(
+  <StrictMode>
     <ThemeProvider theme={theme}>
       <I18nextProvider i18n={i18n}>
         <App />
         <CssBaseline />
       </I18nextProvider>
     </ThemeProvider>
-  </React.StrictMode>,
+  </StrictMode>,
   document.getElementById('root')
 );
 
