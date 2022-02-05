@@ -3,13 +3,19 @@ import styles from './form.module.scss';
 import Email from './FormElements/Email';
 import { IFormProps } from './form.schema';
 import Password from './FormElements/Password';
+import { auth } from '../../../../firebase-config';
 import { useForm, FormProvider } from 'react-hook-form';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 
 const Form = () => {
   const methods = useForm<IFormProps>();
 
-  const onSubmit = (values: IFormProps) => {
-    console.log(values);
+  const onSubmit = async ({ email, password }: IFormProps) => {
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (

@@ -13,15 +13,15 @@ const Routers = () => {
           <Route path="/" element={<Home />}>
             <Route path="login" element={<LogIn />} />
             <Route path="signup" element={<SignUp />} />
-            <Route
-              path="*"
-              element={
-                <main style={{ padding: '1rem' }}>
-                  <p>There's nothing here!</p>
-                </main>
-              }
-            />
           </Route>
+          <Route
+            path="*"
+            element={
+              <main style={{ padding: '1rem' }}>
+                <p>There's nothing here!</p>
+              </main>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </Suspense>
